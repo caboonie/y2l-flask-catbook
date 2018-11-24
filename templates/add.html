@@ -20,7 +20,7 @@
   <nav class="navbar navbar-dark fb-color">
     <a class="text-logo navbar-brand">Catbook</a>
     <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <input  class="form-control mr-sm-2" type="search" placeholder="Search">
       <button class="btn btn-outline-light" type="submit">Search</button>
     </form>
   </nav>
@@ -28,22 +28,11 @@
   <a href="/">
   <img class="header_img mx-auto d-block" src="{{url_for('static', filename='images/catbook_logo.jpg')}}"> </a>
 
-  <div class="row">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4">
-          <div class="card">
-            <div class="card">
-                <img class="card-img-top" src="{{url_for('static', filename='images/cat1.jpg')}}">
-                <div class="card-body">
-                  <h5 class="card-title">{{name}}</h5>
-                  <form method="post">
-                    <button type="submit" class="btn btn-primary">Vote!</button>
-                  </form>
-                </div>
-              </div>
-          </div>
-      </div>
-  </div>
+  <form method=post>
+      <input  type="text" name="cat_name" placeholder="Cat name..">
+      <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+
 
   
   <!--BOOTSTRAP Javascript import-->
